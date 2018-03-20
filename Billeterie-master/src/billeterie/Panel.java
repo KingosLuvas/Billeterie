@@ -15,6 +15,7 @@ import org.w3c.dom.*;
 
 public class Panel extends JPanel implements ActionListener {
 	
+	private static final long serialVersionUID = 1L;
 	private JFrame frame;
 	private JTextField tNom;
 	private JTextField tPrenom;
@@ -24,7 +25,7 @@ public class Panel extends JPanel implements ActionListener {
 	private JRadioButton bAssis;
 	
 	private ArrayList<Billet> billets = new ArrayList<Billet>();
-	private JComboBox liste;
+	private JComboBox<Billet> liste;
 	
 	public Panel (JFrame f) {
 		
@@ -96,7 +97,7 @@ public class Panel extends JPanel implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) throws FormulaireException {
-		
+	
 		if (this.tNom.getText().isEmpty() || this.tPrenom.getText().isEmpty() || this.tMail.getText().isEmpty()) {
 			throw new FormulaireException();
 		}

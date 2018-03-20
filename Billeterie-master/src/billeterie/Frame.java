@@ -5,7 +5,7 @@ public class Frame extends JFrame {
 	Panel pan = new Panel(this);
 	
 	public Frame () {
-		 this.setTitle("Billeterie");
+			this.setTitle("Billeterie");
 		    this.setSize(1000, 625);
 		    this.setLocationRelativeTo(null);
 		    this.setContentPane(pan);
