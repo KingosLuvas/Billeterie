@@ -1,0 +1,21 @@
+package billeterie;
+
+import static org.junit.Assert.assertTrue;
+
+import java.awt.event.ActionEvent;
+
+import org.junit.jupiter.api.Test;
+
+class PanelTest {
+
+	@Test
+	public void test() {
+			//Panel  test = new Panel();
+			//ActionEvent e = null;
+			//test.actionPerformed(e);
+			//assertTrue(false);
+			throw new RuntimeException();
+			
+			}
+			
+		}
